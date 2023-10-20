@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import Portfolio from './portfolio'
 
 export default function Home() {
   return (
-  <h1>hello
-    </h1>
+  <div>
+    <Portfolio></Portfolio>
+    </div>
   )
 }

@@ -1,0 +1,25 @@
+.portfolio {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.portfolio h1 {
+    text-align: center;
+}
+
+.portfolio ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.portfolio li {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.portfolio a {
+    display: inline-block;
+    margin-top: 10px;
+}
