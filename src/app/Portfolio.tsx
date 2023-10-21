@@ -9,14 +9,14 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Project One",
-    description: "This is a description of project one.",
-    link: "https://github.com/yourusername/project-one"
+    title: "Portfolio Web App",
+    description: "A Portfolio Web Application to show off my accomplishments, you should deffinately check it out",
+    link: "https://github.com/IcebergLettuc3/lettucehubnext"
   },
   {
-    title: "Project Two",
-    description: "This is a description of project two.",
-    link: "https://github.com/yourusername/project-two"
+    title: "Project Wingman",
+    description: "A Project that I'm very excited to be making progress on. This project invols the coordination of a large group of different technologies that involve hardware, firmware and software",
+    link: "https://github.com/IcebergLettuc3/wingman"
   },
   // Add more projects as needed
 ];
