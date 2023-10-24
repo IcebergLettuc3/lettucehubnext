@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-  <div>
+  <div className='flex flex-col items-center justify-center'>
     <Intro/>
     <Image
       className='flex m-auto flex-col items-center'
@@ -15,6 +15,7 @@ export default function Home() {
       height={300}
     />
     <Link href="/about">About</Link>
+    <Link href="/blog">Blog</Link>
     <Portfolio/>
     </div>
   )
