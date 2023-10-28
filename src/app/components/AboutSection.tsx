@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function AboutSection() {
     const [tab, setTab] = useState("skills")
-    const [startTransition, isPenging] = useTransition()
+    const [startTransition, isPending] = useTransition()
 
     const handleTabChange = (id:string) => {
         startTransition(() => {

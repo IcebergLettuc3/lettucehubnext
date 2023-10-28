@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react'
+import React, {useState, useTransition} from 'react'
 import Link from 'next/link'
 import NavLink from './NavLink'
 // import { link } from 'fs'
@@ -24,6 +24,13 @@ const NavLinks = [
 
 const NavBar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
+    // const [startTransition, isPenging] = useTransition()
+
+    // const handleTabChange => {
+    //     startTransition(() =>{
+    //         setT
+    //     })
+    // }
 
   return (
     <nav className='fixed left-0 right-0 top-0 z-10 bg-[#121212] bg-opacity-100'>
