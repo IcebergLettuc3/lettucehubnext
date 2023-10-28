@@ -3,7 +3,7 @@ import Portfolio from './Portfolio'
 import Intro from './Intro'
 import Link from 'next/link'
 import HeroSection from './components/HeroSection'
-import { NavBar } from './components/NavBar'
+import NavBar from './components/NavBar'
 
 export default function Home() {
   return (
