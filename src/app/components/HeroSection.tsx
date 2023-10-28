@@ -9,10 +9,10 @@ const HeroSection = () => {
         console.log("button does't work yet")
     }
     return(
-        <section>
+        <section className="lg:py-16">
             <div className="grid grid-cols-1 sm:grid-cols-12">
-                <div className="col-span-7 place-self-center text-center sm:text-left">
-                    <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
+                <div className="col-span-8 place-self-center text-center sm:text-lef justify-self-start">
+                    <h1 className='text-white mb-4 text-5xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold'>
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 ">
                             Hello, I&apos;m{" "}
                             </span>
@@ -21,9 +21,9 @@ const HeroSection = () => {
                             sequence={[
                                 "Jonathan",
                                 1000,
-                                "Web Developer",
+                                "a Web Developer",
                                 1000,
-                                "Desktop App Developer",
+                                "a Desktop App Developer",
                                 1000,
                             ]}
                             wrapper="span"
