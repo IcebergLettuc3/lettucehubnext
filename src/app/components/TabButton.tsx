@@ -1,8 +1,17 @@
 import React from 'react'
 
-function TabButton() {
+interface TabButtonProps {
+    active: boolean,
+    selectTab: any,
+    children: any,
+}
+
+const TabButton: React.FC<TabButtonProps> = ({active, selectTab, children}) => {
+    const buttonClasses = active ? 'text-white border-b border-purle-500' : 'text-[#ADB7BE]'
   return (
-    <div>TabButton</div>
+    <button onClick={selectTab} className ={`${buttonClasses}`}>
+        <p className={`mr-3 font-semibold ${buttonClasses}`}>{children}</p>
+    </button>
   )
 }
 
