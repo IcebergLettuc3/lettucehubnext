@@ -31,8 +31,8 @@ const HeroSection = () => {
                             repeat={Infinity}
                             />
                     </h1>
-                    <p className="text-[#ADB7BE] text-base mb-6 lg:text-xl">
-                        rip about paragraph from linked in and put it here
+                    <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+                        rip about paragraph from linked in and put it heregdc idbahntope eeeeeee eeeeee eeeee eeeee eeeeee eeeeee eeeeeee eee eeeeee eee eeeedn pcetohuc nrti ehtnihe tnuh itnhhoentihtneohcniutohncihcutrneo
                     </p>
                     <div>
                         <button
@@ -48,8 +48,8 @@ const HeroSection = () => {
                         </button>
                     </div>
                 </div>
-                <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-                    <div className="rounded-full bg-[#181818] w-[500px] h-[400px] lg:h-[500px] lg:w-[600px] relative">
+                <div className="col-span-4 place-self-center mt-4 lg:mt-0">
+                    <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:h-[400px] lg:w-[400px] relative">
                         <Image
                         src={"/me.jpg"}
                         alt="Me"
