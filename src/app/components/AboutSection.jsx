@@ -2,6 +2,41 @@
 import React, {useTransition, useState, startTransition} from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton';
+import { title } from 'process';
+import { Content } from 'next/font/google';
+
+const TAB_DATA = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul>
+        <li>Next.js</li>
+        <li>trhrc</li>
+      </ul>
+    )
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul>
+        <li>Next.js</li>
+        <li>aoeuoe</li>
+      </ul>
+    )
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul>
+        <li>Next.js</li>
+        <li>iaae</li>
+      </ul>
+    )
+  },
+]
 
 function AboutSection() {
   const [tab, setTab] = useState("skills");
@@ -46,6 +81,7 @@ function AboutSection() {
                     Certifications
                   </TabButton>
                 </div>
+                <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
             </div>
         </div>
     </section>
