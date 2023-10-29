@@ -42,7 +42,7 @@ function AboutSection() {
                   </TabButton>
                   <TabButton
                     selectTab={() => handleTabChange("certifications")}
-                    active={tab === "ceritifications"}>
+                    active={tab === "certifications"}>
                     Certifications
                   </TabButton>
                 </div>
