@@ -10,7 +10,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
+      <ul className='list-disc pl-2'>
         <li>Next.js</li>
         <li>trhrc</li>
       </ul>
@@ -20,7 +20,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul>
+      <ul className='list-disc pl-2'>
         <li>Next.js</li>
         <li>aoeuoe</li>
       </ul>
@@ -30,7 +30,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul>
+      <ul className='list-disc pl-2'>
         <li>Next.js</li>
         <li>iaae</li>
       </ul>
@@ -59,12 +59,12 @@ function AboutSection() {
     <section className='text-white'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 '>
             <Image src="/me.jpg" alt='some image' width={500} height={500}/>
-            <div>
+            <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg'>
                     teuoahrcgludhgc,.adugchr,hdbacruhcrhucr h.,crauhmcrt.h arhtcrhuc,.r hcrtu hb
                 </p>
-                <div className='flex flex-row mt-8'>
+                <div className='flex justify-start flex-row mt-8'>
                   <TabButton
                     selectTab={() => handleTabChange("skills")}
                     active={tab === "skills"}>
