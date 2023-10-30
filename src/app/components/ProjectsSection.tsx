@@ -7,14 +7,18 @@ const projectsData = [
         title: "Title",
         description: "Description",
         image: "/images/webPortfolio.png",
-        tag: ["All", "Web"]
+        tag: ["All", "Web"],
+        previewUrl: "/",
+        gitUrl: "/"
     },
     {
         id: 2,
         title: "Title2",
         description: "Description2",
         image: "/images/webPortfolio.png",
-        tag: ["All", "Web"]
+        tag: ["All", "Web"],
+        previewUrl: "/",
+        gitUrl: "/",
     },
 ]
 
@@ -28,7 +32,9 @@ function ProjectsSection() {
             key={project.id}
             title={project.title}
             description={project.description}
-            imgUrl={project.image}/>
+            imgUrl={project.image}
+            gitUrl={project.gitUrl}
+            previewUrl={project.previewUrl}/>
             ))}
         </div>
     </>
