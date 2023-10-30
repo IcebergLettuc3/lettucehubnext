@@ -6,14 +6,14 @@ const projectsData = [
         id: 1,
         title: "Title",
         description: "Description",
-        image: "/images/webPortfolio.svg",
+        image: "/images/webPortfolio.png",
         tag: ["All", "Web"]
     },
     {
         id: 2,
         title: "Title2",
         description: "Description2",
-        image: "/images/webPortfolio.svg",
+        image: "/images/webPortfolio.png",
         tag: ["All", "Web"]
     },
 ]
