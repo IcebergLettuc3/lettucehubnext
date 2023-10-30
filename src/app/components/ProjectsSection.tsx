@@ -26,15 +26,17 @@ const projectsData = [
 
 function ProjectsSection() {
     const [tag, setTag] = useState("All")
+    const havdelTagChanged = (newTag:string) => {
+        setTag(newTag)
+    }
   return (
     <>
         <h2 className='text-center text-4xl font-bold text-white mt-4'>
             My Projects
         </h2>
         <div className='text-white flex flex-row justify-center intems-center gap-2 py-6'>
-            <button className=' rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
-                All
-            </button>
+            <ProjectTag onClick={havdelTagChanged} name="All" isSelected={tag === "All"} />
+            <ProjectTag onClick={havdelTagChanged} name="Web" isSelected={tag === "Web"} />
         </div>
         <div>
             {projectsData.map((project) => (
