@@ -1,5 +1,7 @@
-import React from 'react'
+"use client"
+import React, {useState} from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag'
 
 const projectsData = [
     {
@@ -23,9 +25,17 @@ const projectsData = [
 ]
 
 function ProjectsSection() {
+    const [tag, setTag] = useState("All")
   return (
     <>
-        <h2>My Projects</h2>
+        <h2 className='text-center text-4xl font-bold text-white mt-4'>
+            My Projects
+        </h2>
+        <div className='text-white flex flex-row justify-center intems-center gap-2 py-6'>
+            <button className=' rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
+                All
+            </button>
+        </div>
         <div>
             {projectsData.map((project) => (
             <ProjectCard
