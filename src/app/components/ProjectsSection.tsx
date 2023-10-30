@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react'
+import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
 
@@ -18,15 +18,15 @@ const projectsData = [
         title: "Title2",
         description: "Description2",
         image: "/images/webPortfolio.png",
-        tag: ["All", "Web"],
+        tag: ["All"],
         previewUrl: "/",
         gitUrl: "/",
     },
 ]
 
 function ProjectsSection() {
-    const [tag, setTag] = useState("All")
-    const havdelTagChanged = (newTag:string) => {
+    const [tag, setTag] = useState("Web")
+    const handelTagChanged = (newTag:any) => {
         setTag(newTag)
     }
   return (
@@ -35,18 +35,27 @@ function ProjectsSection() {
             My Projects
         </h2>
         <div className='text-white flex flex-row justify-center intems-center gap-2 py-6'>
-            <ProjectTag onClick={havdelTagChanged} name="All" isSelected={tag === "All"} />
-            <ProjectTag onClick={havdelTagChanged} name="Web" isSelected={tag === "Web"} />
+            <ProjectTag
+            onClick={handelTagChanged}
+            name="All"
+            isSelected={tag === "All"}
+            />
+            <ProjectTag
+            onClick={handelTagChanged}
+            name="Web"
+            isSelected={tag === "Web"}
+            />
         </div>
         <div>
             {projectsData.map((project) => (
             <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            imgUrl={project.image}
-            gitUrl={project.gitUrl}
-            previewUrl={project.previewUrl}/>
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                imgUrl={project.image}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+            />
             ))}
         </div>
     </>
