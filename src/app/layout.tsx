@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Lettuce Hub</title>
-        <link rel="icon" href='/images/icebergLettuce.ico'/>
+        <link rel="icon" href='/images/icebergLettuce.ico' sizes='any'/>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
