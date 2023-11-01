@@ -2,12 +2,13 @@
 import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
+import Paragraphs from 'public/utils/LorumIpsum'
 
 const projectsData = [
     {
         id: 1,
         title: "Title",
-        description: "Description",
+        description: Paragraphs[2],
         image: "/images/webPortfolio.png",
         tag: ["All", "Web"],
         previewUrl: "/",
@@ -16,7 +17,7 @@ const projectsData = [
     {
         id: 2,
         title: "Title2",
-        description: "Description2",
+        description: Paragraphs[9],
         image: "/images/webPortfolio.png",
         tag: ["All"],
         previewUrl: "/",

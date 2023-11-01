@@ -1,8 +1,8 @@
 "use client"
-import React from "react"
-import Image from "next/image"
-import {TypeAnimation} from 'react-type-animation'
-
+import React from "react";
+import Image from "next/image";
+import {TypeAnimation} from 'react-type-animation';
+import Paragraphs from '/public/utils/LorumIpsum';
 
 const HeroSection = () => {
     const handelClick = () => {
@@ -23,17 +23,18 @@ const HeroSection = () => {
                                 1000,
                                 "a Web Developer",
                                 1000,
-                                "a Desktop App Developer",
-                                1000,
                             ]}
                             wrapper="span"
                             speed={20}
                             repeat={Infinity}
                             />
                     </h1>
-                    <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+                    {Paragraphs.slice(0,3).map((paragraph:string, index:number) => (
+                        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" key={index}>{paragraph}</p>
+                    ))}
+                    {/* <p className="">
                         rip about paragraph from linked in and put it heregdc idbahntope eeeeeee eeeeee eeeee eeeee eeeeee eeeeee eeeeeee eee eeeeee eee eeeedn pcetohuc nrti ehtnihe tnuh itnhhoentihtneohcniutohncihcutrneo
-                    </p>
+                    </p> */}
                     <div>
                         <button
                             className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"

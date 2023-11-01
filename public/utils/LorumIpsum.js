@@ -1,4 +1,4 @@
-const paragraphs = [
+const Paragraphs = [
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec in efficitur leo. Suspendisse ac urna eget velit viverra aliquet at id augue.",
   "Proin volutpat nisl est, non dictum metus cursus eu. Nullam sit amet efficitur nunc. Fusce vitae turpis at quam vehicula lacinia at ac libero. Sed venenatis, erat vitae elementum dictum, sem justo pharetra felis, ut posuere metus odio sit amet ligula.",
   "Quisque eget consequat diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed et arcu in sem varius dapibus a non odio.",
@@ -11,4 +11,4 @@ const paragraphs = [
   "Cras a enim volutpat, feugiat urna at, convallis leo. Integer vel ornare neque, non dictum sapien. Maecenas pretium, nunc ut maximus dapibus, velit tortor dignissim ante, ut tincidunt nunc neque et lacus.",
 ];
 
-export default paragraphs;
+export default Paragraphs;
