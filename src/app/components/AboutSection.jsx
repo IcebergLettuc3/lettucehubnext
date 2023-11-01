@@ -4,6 +4,7 @@ import Image from 'next/image'
 import TabButton from './TabButton';
 import { title } from 'process';
 import { Content } from 'next/font/google';
+import paragraphs from '/public/utils/LorumIpsum';
 
 const TAB_DATA = [
   {
@@ -47,23 +48,15 @@ function AboutSection() {
       setTab(id);
     });
   };
-    // const [tab, setTab] = useState("skills")
-    // const [startTransition, isPening] = useTransition()
-
-    // const handleTabChange = (id:string) => {
-    //     startTransition(() => {
-    //         setTab(id)
-    //     })
-    // }
   return (
     <section className='text-white'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 '>
             <Image src="/me.jpg" alt='some image' width={500} height={500}/>
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                <p className='text-base lg:text-lg'>
-                    teuoahrcgludhgc,.adugchr,hdbacruhcrhucr h.,crauhmcrt.h arhtcrhuc,.r hcrtu hb
-                </p>
+                {paragraphs.slice(0,3).map((paragraph, index) => (
+                <p className='text-base lg:text-lg' key={index}>{paragraph}</p>
+                ))}
                 <div className='flex justify-start flex-row mt-8'>
                   <TabButton
                     selectTab={() => handleTabChange("skills")}
