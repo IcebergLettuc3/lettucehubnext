@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import {TypeAnimation} from 'react-type-animation';
-import Paragraphs from '/public/utils/LorumIpsum';
+import Paragraphs from '../../../public/utils/LorumIpsum';
 
 const HeroSection = () => {
     const handelClick = () => {

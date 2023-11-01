@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
-import Paragraphs from 'public/utils/LorumIpsum'
+import Paragraphs from '../../../public/utils/LorumIpsum'
 
 const projectsData = [
     {
