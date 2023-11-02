@@ -15,7 +15,7 @@ function EmailSection() {
       message: e.target.message.value,
     }
     const JSONdata = JSON.stringify(data);
-    const endpoints = "/api/send"
+    const endpoint = "/api/send"
 
     const options = {
       method: 'POST',

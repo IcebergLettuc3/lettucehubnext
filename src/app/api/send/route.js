@@ -11,7 +11,7 @@ export async function POST(req, res) {
   try {
     const data = await resend.emails.send({
       from: fromEmail,
-      to: ['jeisenbrandt1@gmail.com', email],
+      to: ['jeisenbrandt1@gmail.com', email, fromEmail],
       subject: subject,
       react: (
         <>
@@ -20,9 +20,11 @@ export async function POST(req, res) {
         </>
       ),// EmailTemplate({ firstName: 'John' }),
     });
+    console.log("route success")
 
     return NextResponse.json(data);
   } catch (error) {
+    console.log("route error")
     return NextResponse.json({ error });
   }
 }
