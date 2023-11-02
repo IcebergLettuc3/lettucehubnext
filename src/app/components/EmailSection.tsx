@@ -1,4 +1,4 @@
-"une client"
+"use client"
 import React, {useState} from 'react'
 import GithubIcon from '/public/images/github-icon.svg'
 import LinkedinIcon from 'public/images/linkedin-icon.svg'
@@ -7,14 +7,14 @@ import Image from 'next/image'
 
 function EmailSection() {
   const [emailSubmitted, setEmailSubmitted] = useState(false)
-  const handelSubmit =async (e:type) => {
+  const handelSubmit =async (e:any) => {
     e.preventDefault();
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
     }
-    const JSONdata = JSON,stringify(data);
+    const JSONdata = JSON.stringify(data);
     const endpoints = "/api/send"
 
     const options = {
