@@ -27,9 +27,14 @@ const projectsData = [
 
 function ProjectsSection() {
     const [tag, setTag] = useState("All")
+
     const handelTagChanged = (newTag:any) => {
         setTag(newTag)
     }
+    const filteredProjects = projectsData.filter((project) => 
+        project.tag.includes(tag)
+    )
+
   return (
     <>
         <h2 className='text-center text-4xl font-bold text-white mt-4'>
@@ -58,7 +63,7 @@ function ProjectsSection() {
             />
         </div>
         <div>
-            {projectsData.map((project) => (
+            {filteredProjects.map((project) => (
             <ProjectCard
                 key={project.id}
                 title={project.title}
