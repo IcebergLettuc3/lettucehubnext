@@ -46,6 +46,16 @@ function ProjectsSection() {
             name="Web"
             isSelected={tag === "Web"}
             />
+            <ProjectTag
+            onClick={handelTagChanged}
+            name="Machine Learning"
+            isSelected={tag === "Machine Learning"}
+            />
+            <ProjectTag
+            onClick={handelTagChanged}
+            name="Mobile"
+            isSelected={tag === "Mobile"}
+            />
         </div>
         <div>
             {projectsData.map((project) => (
