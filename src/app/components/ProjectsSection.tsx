@@ -26,7 +26,7 @@ const projectsData = [
 ]
 
 function ProjectsSection() {
-    const [tag, setTag] = useState("Web")
+    const [tag, setTag] = useState("All")
     const handelTagChanged = (newTag:any) => {
         setTag(newTag)
     }
