@@ -8,6 +8,7 @@ import Image from 'next/image'
 function EmailSection() {
   const [emailSubmitted, setEmailSubmitted] = useState(false)
   const handelSubmit =async (e:any) => {
+    console.log("handelSubmit")
     e.preventDefault();
     const data = {
       email: e.target.email.value,
@@ -29,6 +30,8 @@ function EmailSection() {
     if (response.status === 200) {
       console.log('Message sent.')
       setEmailSubmitted(true)
+    } else {
+      console.log('message not sent')
     }
   }
   return (
