@@ -31,7 +31,7 @@ function EmailSection() {
       console.log('Message sent.')
       setEmailSubmitted(true)
     } else {
-      console.log('message not sent')
+      console.log('message not sent', response.status)
     }
   }
   return (
