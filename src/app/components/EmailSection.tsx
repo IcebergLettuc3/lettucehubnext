@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 function EmailSection() {
   const [emailSubmitted, setEmailSubmitted] = useState(false)
-  const handelSubmit =async (e:any) => {
+  const handelSubmit = async (e:any) => {
     console.log("handelSubmit")
     e.preventDefault();
     const data = {
