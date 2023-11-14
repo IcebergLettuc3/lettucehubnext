@@ -18,8 +18,8 @@ export default function Home() {
         <AboutSection/>
         <ProjectsSection/>
         <EmailSection/>
-        <Footer/>
       </div>
+      <Footer/>
     </main>
   // <div className='flex flex-col items-center justify-center'>
   //   <Intro/>
