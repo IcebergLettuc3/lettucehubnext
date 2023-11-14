@@ -18,6 +18,7 @@ export async function POST(req, res) {
       react: (
         <>
           <h1>{subject}</h1>
+          <p>Thank you for submitting an email</p>
           <p>{message}</p>
         </>
       ),// EmailTemplate({ firstName: 'John' }),
