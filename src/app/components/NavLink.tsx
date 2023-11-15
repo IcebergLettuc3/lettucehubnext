@@ -16,4 +16,5 @@ const NavLink:  React.FC<NavLinkProps> = ({href, title}) => {
         </Link>
     )
 }
+
 export default NavLink
