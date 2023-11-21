@@ -12,8 +12,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className='list-disc pl-2'>
-        <li>Next.js</li>
-        <li>trhrc</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>JavaScipt</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>React</li>
+        <li>QT</li>
+        <li>Docker</li>
       </ul>
     )
   },
@@ -22,8 +28,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className='list-disc pl-2'>
-        <li>Next.js</li>
-        <li>aoeuoe</li>
+        <li>University of Houston</li>
       </ul>
     )
   },
@@ -32,8 +37,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className='list-disc pl-2'>
-        <li>Next.js</li>
-        <li>iaae</li>
+        <li>Coursera Machine Learning Specialization</li>
       </ul>
     )
   },
@@ -54,9 +58,18 @@ function AboutSection(id) {
             <Image src="/images/me.jpg" alt='some image' width={500} height={500}/>
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                {Paragraphs.slice(0,5).map((paragraph, index) => (
+                {/* {Paragraphs.slice(0,5).map((paragraph, index) => (
                 <p className='text-base lg:text-lg' key={index}>{paragraph}</p>
-                ))}
+                ))} */}
+                <p>
+                  Graduate of the University of Houston Cullen College of Engineering with hands-on
+                  experience in software development, encompassing both desktop and web application
+                  design and implementation. Adept at translating complex requirements into functional
+                  and user-friendly software solutions. Keenly interested in leveraging cloud computing
+                  technologies and exploring the vast potential of artificial intelligence to innovate
+                  and drive digital transformation. Eager to collaborate on projects that push the boundaries
+                  of tech and provide meaningful impact.
+                </p>
                 <div className='flex justify-start flex-row mt-8'>
                   <TabButton
                     selectTab={() => handleTabChange("skills")}
