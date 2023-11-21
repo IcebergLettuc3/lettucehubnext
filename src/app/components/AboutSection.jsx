@@ -20,6 +20,7 @@ const TAB_DATA = [
         <li>React</li>
         <li>QT</li>
         <li>Docker</li>
+        <li>Git</li>
       </ul>
     )
   },

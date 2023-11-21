@@ -34,9 +34,14 @@ const HeroSection = () => {
                             repeat={Infinity}
                             />
                     </h1>
-                    {Paragraphs.slice(0,3).map((paragraph:string, index:number) => (
+                    {/* {Paragraphs.slice(0,3).map((paragraph:string, index:number) => (
                         <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" key={index}>{paragraph}</p>
-                    ))}
+                    ))} */}
+                    <p>
+                        Hi, I&apos;m a Computer Engineering Graduate with experience in Firmware development,
+                        Software development, and Machine learning seeking Software development
+                        opportunities to impact the software engineering industry.
+                    </p>
                     <div>
                         <button
                             className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
