@@ -5,7 +5,7 @@ const Intro: React.FC = () => {
         <div className='flex m-auto flex-col items-center'>
             <h1 className='text-xl'>
                 {/* add conditional int on years of experience */}
-                Hello my Name is Jonathan Eisenbrandt I&apos;m a software developer with over 1 year of experience developing applications for desktop and web.
+                Hello my Name is Jonathan Eisenbrandt I&apos;m a software developer with 2 years of experience developing applications for desktop and web.
             </h1>
             <h1 className='text-xl'>
                 Welcome to my website.
