@@ -9,6 +9,18 @@ const HeroSection = () => {
     const handleClick = () => {
         console.log("button does't work yet")
     }
+    const handleDownloadClick = () => {
+        const link = document.createElement('a');
+        link.href = '/Jonathan_Eisenbrandt_Resume.pdf'; // Path to your PDF file in the public directory
+        link.download = 'Jonathan_Eisenbrandt_Resume.pdf'; // Optional: Sets the default download file name
+
+  // Append to the document and trigger the download
+        document.body.appendChild(link);
+        link.click();
+
+  // Clean up and remove the link
+        document.body.removeChild(link);
+    }
     const handleContactClick = () => {
         const element = document.getElementById('contact');
         if (element) {
@@ -59,7 +71,7 @@ const HeroSection = () => {
                         </button>
                         <button
                             className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-                            onClick={handleClick}>
+                            onClick={handleDownloadClick}>
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download Resume</span>
                             
                         </button>
