@@ -42,6 +42,15 @@ const TAB_DATA = [
       </ul>
     )
   },
+  {
+    title: "Tech Interests",
+    id: "techinterests",
+    content: (
+      <ul className='list-disc pl-2'>
+        <li>Machine learning</li>
+      </ul>
+    )
+  }
 ]
 
 function AboutSection(id) {
@@ -71,21 +80,30 @@ function AboutSection(id) {
                   and drive digital transformation. Eager to collaborate on projects that push the boundaries
                   of tech and provide meaningful impact.
                 </p>
-                <div className='flex justify-start flex-row mt-8'>
+                <div className='flex flex-row justify-start mt-8'>
                   <TabButton
                     selectTab={() => handleTabChange("skills")}
                     active={tab === "skills"}>
-                    Skills
+                      {" "}
+                      Skills{" "}
                   </TabButton>
                   <TabButton
                     selectTab={() => handleTabChange("education")}
                     active={tab === "education"}>
-                    Education
+                      {" "}
+                      Education{" "}
                   </TabButton>
                   <TabButton
                     selectTab={() => handleTabChange("certifications")}
                     active={tab === "certifications"}>
-                    Certifications
+                      {" "}
+                      Certifications{" "}
+                  </TabButton>
+                  <TabButton
+                    selectTab={() => handleTabChange("techinterests")}
+                    active={tab === "techinterests"}>
+                      {" "}
+                      Tech Interests{" "}
                   </TabButton>
                 </div>
                 <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
