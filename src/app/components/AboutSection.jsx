@@ -48,6 +48,11 @@ const TAB_DATA = [
     content: (
       <ul className='list-disc pl-2'>
         <li>Machine learning</li>
+        <li>Full Stack Web Development</li>
+        <li>Dev Ops</li>
+        <li>Cloud Computing</li>
+        <li>Game Development</li>
+        <li>Software Archetecture and Design</li>
       </ul>
     )
   }
