@@ -55,6 +55,7 @@ function EmailSection() {
         </div>
       </div>
       <div>
+        <h1 className='text-primary-400'>Email Section not functioning at the moment</h1>
         <form className='flex flex-col gap-6' onSubmit={handelSubmit}>
           <div className='mb-3'>
           <label
