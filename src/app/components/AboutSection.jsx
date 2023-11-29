@@ -18,7 +18,6 @@ const TAB_DATA = [
         <li>CSS</li>
         <li>HTML</li>
         <li>React</li>
-        <li>QT</li>
         <li>Docker</li>
         <li>Git</li>
       </ul>
