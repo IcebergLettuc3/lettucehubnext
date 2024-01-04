@@ -87,7 +87,7 @@ function EmailSection() {
           </div>
           <div className='mb-6'>
             <label
-              htmlFor='messade'
+              htmlFor='message'
               className='text-white block text-sm mb-2 font-medium'>
               Message
             </label>
