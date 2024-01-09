@@ -24,6 +24,17 @@ const projectsData = [
         previewUrl: "/",
         gitUrl: "/",
     },
+    {
+        id: 3,
+        title: "Static Page Hosted on aws",
+        description: "acessible here",
+        projectUrl: "https://lettuceawstest.s3.amazonaws.com/index.html",
+        shortUrl: "awsTest",
+        image: "/images/webPortfolio.png",
+        tag: ["All"],
+        previewUrl: "/",
+        gitUrl: "/",
+    },
 ]
 
 const ProjectsSection = () => {
@@ -34,7 +45,7 @@ const ProjectsSection = () => {
     const handelTagChanged = (newTag:any) => {
         setTag(newTag)
     }
-    const filteredProjects = projectsData.filter((project) => 
+    const filteredProjects = projectsData.filter((project) =>
         project.tag.includes(tag)
     )
 
@@ -82,6 +93,8 @@ const ProjectsSection = () => {
                 key={project.id}
                 title={project.title}
                 description={project.description}
+                projectUrl={project.projectUrl}
+                shortUrl={project.shortUrl}
                 imgUrl={project.image}
                 gitUrl={project.gitUrl}
                 previewUrl={project.previewUrl}
