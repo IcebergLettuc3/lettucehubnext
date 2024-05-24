@@ -1,7 +1,7 @@
 "use client"
 import React, {useState} from 'react'
 import GithubIcon from '/public/images/github-icon.svg'
-import LinkedinIcon from 'public/images/linkedin-icon.svg'
+// import LinkedinIcon from 'public/images/linkedin-icon.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -50,7 +50,7 @@ function EmailSection() {
             <Image src={GithubIcon} alt="Github Icon"/>
           </Link>
           <Link href='linkedin.com'>
-            <Image src={LinkedinIcon} alt="Linkedin Icon"/>
+            <Image src={/*LinkedinIcon*/GithubIcon} alt="Linkedin Icon"/>
           </Link>
         </div>
       </div>
